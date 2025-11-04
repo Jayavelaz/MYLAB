@@ -1,10 +1,10 @@
 // createResourceGroup.bicep
 targetScope = 'subscription'
 
-@description('GITTEST')
+@description('The name of the resource group.')
 param rgName string
 
-@description('Eastus')
+@description('The location for the resource group.')
 param location string = resourceGroup().location
 
 resource newResourceGroup 'Microsoft.Resources/resourceGroups@2021-04-01' = {
