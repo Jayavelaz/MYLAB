@@ -27,10 +27,5 @@ jobs:
         azPSVersion: "latest"
         inlineScript: |
           Get-AzWebApp
-    resourceGroupName: test
-        template: ./store.bicep
-        parameters: 'storagePrefix=mystore storageSKU=Standard_LRS'
-        failOnStdErr: false
-
-
+    
 
